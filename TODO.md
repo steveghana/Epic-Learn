@@ -1,4 +1,8 @@
-- [ ] I want users to be able to create orders for new items
-- [ ] ability to order repairs
-- [ ] ability to get updates on their items
-- [ ]
+- Complete Clerk Auth
+- Set up orm using drizzle orm and Database using Neon Db
+- Set up the s3 bucket on aws to upload files
+- Get the related file key and meta from the s3 bucket
+- Store the filekey and metadata in Neon Db to be used to download from the s3 bucket later.
+- Use langchain utilities to read the text from the downloaded file from the s3 bucket
+- Split the text into multiple paragraphs or vectors to save space using doc Splitter
+- Split even further using some utilities from either pincone or or langchain = learn more
