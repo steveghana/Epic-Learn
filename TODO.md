@@ -3,6 +3,11 @@
 - Set up the s3 bucket on aws to upload files
 - Get the related file key and meta from the s3 bucket
 - Store the filekey and metadata in Neon Db to be used to download from the s3 bucket later.
+- 1. Load pdf into memory using the pdfloader from langchain
+- 2. obtain the text from the pdf -> download and read from pdf
+- 3. split and segment the pdf using pincone recursive chars text splitter
+- 4. vectorise and embed individual documents
+- 5. upload the vector to pinecone
 - Use langchain utilities to read the text from the downloaded file from the s3 bucket
 - Split the text into multiple paragraphs or vectors to save space using doc Splitter
 - Split even further using some utilities from either pincone or or langchain = learn more
