@@ -16,8 +16,6 @@ import type {
 } from "convex/server";
 import type * as chat from "../chat.js";
 import type * as messages from "../messages.js";
-import type * as stripe from "../stripe.js";
-import type * as webhook from "../webhook.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -30,8 +28,6 @@ import type * as webhook from "../webhook.js";
 declare const fullApi: ApiFromModules<{
   chat: typeof chat;
   messages: typeof messages;
-  stripe: typeof stripe;
-  webhook: typeof webhook;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,
